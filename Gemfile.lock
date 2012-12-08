@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/andreas/google_calendar.git
+  revision: a635fc00daacc6d55173102d9ff9b6cf008683b9
+  specs:
+    google_calendar (0.2.2)
+      addressable (>= 2.2.2)
+      nokogiri (>= 1.4.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -27,9 +35,6 @@ GEM
     do_sqlite3 (0.10.10)
       data_objects (= 0.10.10)
     extlib (0.9.15)
-    google_calendar (0.2.2)
-      addressable (>= 2.2.2)
-      nokogiri (>= 1.4.4)
     httparty (0.9.0)
       multi_json (~> 1.0)
       multi_xml
@@ -60,7 +65,7 @@ DEPENDENCIES
   dm-sqlite-adapter
   dm-timestamps
   dm-validations
-  google_calendar
+  google_calendar!
   httparty
   pg
   rufus-scheduler

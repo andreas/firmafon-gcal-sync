@@ -2,7 +2,7 @@ source :rubygems
 ruby "1.9.3"
 
 gem "rufus-scheduler"
-gem "google_calendar"
+gem "google_calendar", github: "andreas/google_calendar"
 gem "httparty"
 gem "dm-core"
 gem "dm-migrations"
