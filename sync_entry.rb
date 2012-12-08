@@ -26,7 +26,9 @@ module FirmafonGcalSync
     before :create, :set_token
 
     def busy?
-      calendar.find_events_in_range(Time.now, Time.now+1) != nil
+      events = calendar.find_events_in_range(Time.now, Time.now+1)
+
+      Array(events).any?(&:opaque?)
     end
 
     def do_not_disturb
